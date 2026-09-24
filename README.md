@@ -1,19 +1,23 @@
-# liyanyi 的个人主页
+# 李彦毅 · Li Yanyi
 
-网站地址：https://liyanyi1123.github.io/
+个人主页：https://liyanyi1123.github.io/
 
-仓库：https://github.com/liyanyi1123/liyanyi1123.github.io
+此仓库存放 liyanyi-portfolio 的静态构建产物，使用 GitHub Pages 从 main 分支根目录发布。
+页面支持中英文切换与浅色、深色主题。
 
-无需构建的静态网页，支持 GitHub Pages。
+## 更新网站
 
-- `index.html`：姓名、简介、近况与导航。
-- `style.css`：排版、颜色和手机适配。
-- `favicon.svg`：浏览器图标。
-- `.nojekyll`：直接发布静态文件。
+在 liyanyi-portfolio 源码项目中修改内容，并运行：
 
-本地双击 `index.html` 即可预览。修改文字后提交到 GitHub，Pages 会自动更新。
+```sh
+pnpm install --frozen-lockfile
+SITE_URL=https://liyanyi1123.github.io pnpm build
+```
 
-个人主页仓库名为 `liyanyi1123.github.io`。
-在仓库 Settings → Pages 中选 Deploy from a branch、main、/ (root)。
+将 dist 中的全部文件发布到此仓库根目录，并保留 `.nojekyll`，使 `_astro` 资源正常提供服务。
+旧版本保留在 Git 提交历史中。
 
-页面显示名与 GitHub 用户名可以不同。
+## 授权
+
+本站由 MIT 授权的 [Astro Nano](https://github.com/markhorn-dev/astro-nano) 改造而来。
+原始授权文本见 LICENSE。
