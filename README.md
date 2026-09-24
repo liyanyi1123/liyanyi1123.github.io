@@ -1,23 +1,15 @@
 # 李彦毅 · Li Yanyi
 
-个人主页：https://liyanyi1123.github.io/
+- 通用主页：https://liyanyi1123.github.io/
+- PhD / 研究主页：https://liyanyi1123.github.io/research/
+- AI 产品 / AI 开发求职主页：https://liyanyi1123.github.io/career/
 
-此仓库存放 liyanyi-portfolio 的静态构建产物，使用 GitHub Pages 从 main 分支根目录发布。
-页面支持中英文切换与浅色、深色主题。
+本仓库存放 Astro 网站的静态发布文件。GitHub Pages 从 main 分支根目录发布。
+研究页默认英文、求职页默认中文；语言选择和明暗模式支持切换及记忆。
 
-## 更新网站
+本次新增两个面向不同读者的页面，原通用主页及其资源保留。
+新页面的教育、论文和实习信息集中维护于源码的 `src/data/profile.ts`。
+构建命令：`SITE_URL=https://liyanyi1123.github.io pnpm build`。
+发布时保留 `.nojekyll`，确保 `_astro` 资源可用。
 
-在 liyanyi-portfolio 源码项目中修改内容，并运行：
-
-```sh
-pnpm install --frozen-lockfile
-SITE_URL=https://liyanyi1123.github.io pnpm build
-```
-
-将 dist 中的全部文件发布到此仓库根目录，并保留 `.nojekyll`，使 `_astro` 资源正常提供服务。
-旧版本保留在 Git 提交历史中。
-
-## 授权
-
-本站由 MIT 授权的 [Astro Nano](https://github.com/markhorn-dev/astro-nano) 改造而来。
-原始授权文本见 LICENSE。
+本站基于 MIT 授权的 [Astro Nano](https://github.com/markhorn-dev/astro-nano)。原始授权见 LICENSE。
